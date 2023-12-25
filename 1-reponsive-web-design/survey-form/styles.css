@@ -1,3 +1,69 @@
-h1 {
-  color: red;
+body {
+  width: 100%;
+  margin: 0;
+  background-color: #283655;
+  color: #D0E1F9;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: none;
+  padding: 1rem 0;
+  border-bottom: 1px solid #D0E1F9;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input, textarea, select {
+  width: 100%;
+}
+
+input, textarea {
+  background-color: #1E1F26;
+  border: 1px solid #D0E1F9;
+  color: #D0E1F9;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: bold;
+  opacity: 0.8;
+  color: #4D648D;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #D0E1F9;
+  border-color: #D0E1F9;
+  color: #1E1F26;
+  min-width: 300px;
+  
 }

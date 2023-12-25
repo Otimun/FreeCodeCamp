@@ -9,20 +9,49 @@
     <h1 id="title">Survey</h1>
     <p id="description">This is a survey form for x.</p>
     <form id="survey-form">
-      <fielset>
-        <label for="name">Name 
-        <input id="name" type="text" required>
+      <fieldset>
+        <label for="name" id="name-label">Name 
+        <input id="name" type="text" placeholder="John Doe" required>
         </label>
-        <label for="email">Email
-          <input id="email" type="email" required>
+        <label for="email" id="email-label">Email
+          <input id="email" type="email" placeholder="youremail@gmail.com" required>
         </label>
-        <label></label>
-      </fielset>
-      <fielset>
-      </fielset>
-      <fielset>
-      </fielset>
-      <input type="submit">
+        <label for="number" id="number-label">Age
+          <input id="number" type="number" min=13 max=120 placeholder="25" required>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Would you recommend our company to a friend?</legend>
+        <label><input type="radio" class="inline" name="recommend" value="Definitely" checked>Definitely</label>
+        <label><input type="radio" class="inline" name="recommend" value="Maybe">Maybe</label>
+        <label><input type="radio" class="inline" name="recommend" value="Not Sure">Not Sure</label>
+      </fieldset>
+      <fieldset>
+        <label>What is your favorite part of:
+          <select id="dropdown">
+            <option value="">Select an option</option>
+            <option value=1>Option 1</option>
+            <option value=2>Option 2</option>
+            <option value=3>Option 3</option>
+            <option value=4>Option 4</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>What would you improve?</legend>
+        <label><input type="checkbox" class="inline" value="responsiveness"> Better responsiveness to emails</label>
+        <label><input type="checkbox" class="inline" value="proactive"> More proactive work</label>
+        <label><input type="checkbox" class="inline" value="questions"> Help with technical questions</label>
+        <label><input type="checkbox" class="inline" value="knowledge"> Deeper technical knowledge</label>
+        <label><input type="checkbox" class="inline" value="classes"> Classes to teach our engineers</label>
+        <label><input type="checkbox" class="inline" value="meetings"> More regular meetings</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">Any comments or suggestions?
+        <textarea id="comments" placeholder="Enter your comment here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" name="Submit">
     </form>
   </body>
 </html>
