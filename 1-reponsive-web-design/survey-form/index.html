@@ -8,7 +8,7 @@
   <body>
     <h1 id="title">Survey</h1>
     <p id="description">This is a survey form for x.</p>
-    <form id="survey-form">
+    <form id="survey-form" method="post" action='https://survey.freecodecamp.org'>
       <fieldset>
         <label for="name" id="name-label">Name 
         <input id="name" type="text" placeholder="John Doe" required>
@@ -17,7 +17,7 @@
           <input id="email" type="email" placeholder="youremail@gmail.com" required>
         </label>
         <label for="number" id="number-label">Age
-          <input id="number" type="number" min=13 max=120 placeholder="25" required>
+          <input id="number" type="number" min=18 max=120 placeholder="25" required>
         </label>
       </fieldset>
       <fieldset>
@@ -27,13 +27,13 @@
         <label><input type="radio" class="inline" name="recommend" value="Not Sure">Not Sure</label>
       </fieldset>
       <fieldset>
-        <label>What is your favorite part of:
-          <select id="dropdown">
+        <label>What area do you work in:
+          <select id="area" >
             <option value="">Select an option</option>
-            <option value=1>Option 1</option>
-            <option value=2>Option 2</option>
-            <option value=3>Option 3</option>
-            <option value=4>Option 4</option>
+            <option value=1>Consulting</option>
+            <option value=2>Development</option>
+            <option value=3>Security</option>
+            <option value=4>IT Management</option>
           </select>
         </label>
       </fieldset>
